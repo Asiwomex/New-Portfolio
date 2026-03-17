@@ -14,7 +14,13 @@ import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 
 const Index = () => (
-  <>
+  <div className="relative overflow-x-clip">
+    <div className="pointer-events-none absolute inset-0 -z-10">
+      <div className="absolute top-[20rem] -left-24 h-80 w-80 rounded-full bg-primary/15 blur-3xl" />
+      <div className="absolute top-[62rem] -right-20 h-80 w-80 rounded-full bg-pink/15 blur-3xl" />
+      <div className="absolute bottom-64 left-1/2 h-80 w-80 -translate-x-1/2 rounded-full bg-accent/15 blur-3xl" />
+    </div>
+
     <Header />
     <main>
       <HeroSection />
@@ -31,7 +37,7 @@ const Index = () => (
     </main>
     <Footer />
     <BackToTop />
-  </>
+  </div>
 );
 
 export default Index;

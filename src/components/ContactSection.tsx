@@ -78,15 +78,15 @@ const ContactSection = () => {
               </div>
               <div>
                 <label htmlFor="contact-name" className="text-sm font-medium text-foreground block mb-1.5">Name</label>
-                <input id="contact-name" type="text" required value={name} onChange={(e) => setName(e.target.value)} className="w-full px-4 py-2.5 rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all" placeholder="Your name" />
+                <input id="contact-name" type="text" required value={name} onChange={(e) => setName(e.target.value)} className="w-full px-4 py-2.5 rounded-xl border border-white/50 bg-background/65 backdrop-blur-md text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/25 transition-all" placeholder="Your name" />
               </div>
               <div>
                 <label htmlFor="contact-email" className="text-sm font-medium text-foreground block mb-1.5">Email</label>
-                <input id="contact-email" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} className="w-full px-4 py-2.5 rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all" placeholder="your@email.com" />
+                <input id="contact-email" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} className="w-full px-4 py-2.5 rounded-xl border border-white/50 bg-background/65 backdrop-blur-md text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/25 transition-all" placeholder="your@email.com" />
               </div>
               <div>
                 <label htmlFor="contact-message" className="text-sm font-medium text-foreground block mb-1.5">Message</label>
-                <textarea id="contact-message" required rows={4} value={message} onChange={(e) => setMessage(e.target.value)} className="w-full px-4 py-2.5 rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 resize-none transition-all" placeholder="Your message..." />
+                <textarea id="contact-message" required rows={4} value={message} onChange={(e) => setMessage(e.target.value)} className="w-full px-4 py-2.5 rounded-xl border border-white/50 bg-background/65 backdrop-blur-md text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/25 resize-none transition-all" placeholder="Your message..." />
               </div>
               <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} type="submit" className="w-full px-4 py-3 rounded-xl text-sm font-medium text-primary-foreground transition-all hover:shadow-lg" style={{ background: "var(--gradient-primary)" }}>
                 Send Message

@@ -59,10 +59,9 @@ const ExperienceSection = () => (
               <motion.div whileHover={{ x: 4 }} className="md:pl-16 relative">
                 <div className={`hidden md:block absolute left-4 md:left-5 top-6 w-5 h-5 rounded-full ${exp.dotColor} border-4 border-background shadow-md`} />
                 <div className="glass-card">
-                  <div className="absolute top-0 left-0 right-0 h-1 rounded-t-2xl" style={{ background: exp.gradient }} />
-                  <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-1 mb-3 pt-2">
+                  <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-1 mb-3">
                     <h3 className="font-bold text-foreground text-lg">{exp.role}</h3>
-                    <span className="text-xs font-mono text-primary px-3 py-1 rounded-full bg-primary/8 whitespace-nowrap border border-primary/15">{exp.period}</span>
+                    <span className="text-xs font-mono text-foreground px-3 py-1 rounded-full bg-foreground/[0.05] whitespace-nowrap border border-foreground/10">{exp.period}</span>
                   </div>
                   <p className="text-sm text-accent font-medium mb-4">{exp.company}</p>
                   <ul className="space-y-2">

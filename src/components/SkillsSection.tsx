@@ -24,7 +24,7 @@ const SkillsSection = () => (
           <StaggerItem key={group.category}>
             <motion.div whileHover={{ scale: 1.02 }} className="glass-card h-full">
               <div className="flex items-center gap-3 mb-5">
-                <div className="w-2 h-10 rounded-full" style={{ background: group.gradient }} />
+                <div className="w-2 h-10 rounded-full bg-foreground/10" />
                 <h3 className="font-bold text-foreground">{group.category}</h3>
               </div>
               <div className="flex flex-wrap gap-2">

@@ -36,8 +36,7 @@ const PublicationsSection = () => (
         {publications.map((pub, i) => (
           <StaggerItem key={i}>
             <motion.div whileHover={{ x: 6 }} className="glass-card flex gap-4 group">
-              <div className="absolute top-0 left-0 bottom-0 w-1 rounded-l-2xl" style={{ background: pub.gradient }} />
-              <div className="icon-box shrink-0" style={{ background: pub.gradient }}>
+              <div className="icon-box shrink-0" style={{ background: "var(--gradient-mixed)" }}>
                 <FileText size={20} className="text-primary-foreground" />
               </div>
               <div>
@@ -45,7 +44,7 @@ const PublicationsSection = () => (
                   {pub.authors}, {pub.year}. <em className="text-primary font-medium">{pub.title}.</em>{" "}
                   <span className="text-muted-foreground">{pub.journal}, {pub.page}.</span>
                 </p>
-                <a href={pub.doi} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs font-mono px-3 py-1.5 rounded-lg bg-primary/8 text-primary hover:bg-primary/15 transition-all border border-primary/15 hover:scale-105">
+                <a href={pub.doi} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs font-mono px-3 py-1.5 rounded-lg bg-foreground/[0.05] text-foreground hover:bg-foreground/[0.08] transition-all border border-foreground/10 hover:scale-105">
                   <ExternalLink size={12} /> View Publication
                 </a>
               </div>

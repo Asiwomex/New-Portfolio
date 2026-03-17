@@ -21,13 +21,12 @@ const CertificationsSection = () => (
         {certifications.map((cert, i) => (
           <StaggerItem key={i}>
             <motion.div whileHover={{ y: -6, scale: 1.02 }} className="glass-card h-full group">
-              <div className="absolute top-0 left-0 right-0 h-1 rounded-t-2xl" style={{ background: cert.gradient }} />
-              <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform bg-secondary">
+              <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform bg-background/70 border border-white/50 backdrop-blur-sm">
                 {cert.emoji}
               </div>
               <h3 className="font-bold text-foreground text-sm mb-2 group-hover:text-primary transition-colors">{cert.title}</h3>
               <p className="text-xs text-muted-foreground mb-1">{cert.issuer}</p>
-              <p className="text-xs font-mono text-primary mb-4">{cert.date}</p>
+              <p className="text-xs font-mono text-foreground/80 mb-4">{cert.date}</p>
               {cert.link && (
                 <a href={cert.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs font-medium px-4 py-2 rounded-lg text-primary-foreground transition-all hover:scale-105 hover:shadow-md" style={{ background: cert.gradient }}>
                   <ExternalLink size={12} /> View Certificate

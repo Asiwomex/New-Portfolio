@@ -13,8 +13,7 @@ const LeadershipSection = () => (
 
       <AnimatedSection delay={0.1}>
         <motion.div whileHover={{ scale: 1.01 }} className="glass-card max-w-2xl">
-          <div className="absolute top-0 left-0 right-0 h-1 rounded-t-2xl" style={{ background: "var(--gradient-warm)" }} />
-          <div className="flex items-start gap-4 mb-4 pt-2">
+          <div className="flex items-start gap-4 mb-4">
             <div className="icon-box text-2xl shrink-0" style={{ background: "var(--gradient-warm)" }}>
               <Leaf className="text-primary-foreground" size={24} />
             </div>

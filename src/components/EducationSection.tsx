@@ -28,11 +28,11 @@ const EducationSection = () => (
               <div>
                 <div className="flex flex-col md:flex-row md:items-baseline md:gap-3">
                   <h3 className="font-bold text-foreground">{edu.degree}</h3>
-                  <span className="text-xs font-mono text-primary px-2 py-0.5 rounded-full bg-primary/8 border border-primary/15">{edu.period}</span>
+                  <span className="text-xs font-mono text-foreground px-2 py-0.5 rounded-full bg-foreground/[0.05] border border-foreground/10">{edu.period}</span>
                 </div>
                 <p className="text-sm text-muted-foreground mt-1">{edu.institution}</p>
                 {edu.thesis && (
-                  <p className="text-xs text-muted-foreground mt-2 italic leading-relaxed border-l-2 border-primary/30 pl-3">
+                  <p className="text-xs text-muted-foreground mt-2 italic leading-relaxed border-l-2 border-foreground/15 pl-3">
                     Thesis: {edu.thesis}
                   </p>
                 )}
